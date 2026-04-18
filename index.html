@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JobScout — Program Management Jobs</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JobScout — Program Management Jobs</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
 /* ============================================================
    JobScout — styles.css  |  Light + Dark mode, responsive
    ============================================================ */
@@ -311,189 +310,192 @@ input,select{font-family:var(--font)}
 
 /* ---- TRANSITIONS ---- */
 .job-card,.stat-card,.topbar,.sidebar,.modal,.upload-area,.filter-bar select,.btn-save,.city-btn,.theme-btn{transition-property:background,border-color,color,box-shadow;transition-duration:0.2s}
-  </style>
+
+</style>
 </head>
 <body>
 
-  <aside class="sidebar" id="sidebar">
-    <div class="sidebar-logo">
-      <span class="logo-icon">🎯</span>
-      <span class="logo-text">JobScout</span>
-    </div>
-    <nav class="sidebar-nav">
-      <a href="#" class="nav-item active" data-view="dashboard">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-        Dashboard
-      </a>
-      <a href="#" class="nav-item" data-view="resume">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        Resume Match
-      </a>
-      <a href="#" class="nav-item" data-view="saved">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-        Saved Jobs <span class="badge" id="savedBadge">0</span>
-      </a>
-    </nav>
-    <div class="sidebar-section-label">Sources</div>
-    <div class="source-toggles" id="sourceToggles">
-      <label class="source-toggle"><input type="checkbox" value="linkedin" checked /> <span class="dot linkedin"></span> LinkedIn</label>
-      <label class="source-toggle"><input type="checkbox" value="naukri" checked /> <span class="dot naukri"></span> Naukri</label>
-      <label class="source-toggle"><input type="checkbox" value="indeed" checked /> <span class="dot indeed"></span> Indeed</label>
-      <label class="source-toggle"><input type="checkbox" value="iimjobs" checked /> <span class="dot iimjobs"></span> IIM Jobs</label>
-    </div>
-    <div class="sidebar-section-label">Sub-Verticals</div>
-    <div class="chip-list" id="subverticalChips">
-      <span class="chip active" data-sv="all">All</span>
-      <span class="chip" data-sv="program_management">Program Mgmt</span>
-      <span class="chip" data-sv="account_management">Account Mgmt</span>
-      <span class="chip" data-sv="brand_management">Brand Mgmt</span>
-      <span class="chip" data-sv="marketing_strategy">Marketing Strategy</span>
-      <span class="chip" data-sv="market_research">Market Research</span>
-      <span class="chip" data-sv="growth_management">Growth</span>
-      <span class="chip" data-sv="category_management">Category Mgmt</span>
-      <span class="chip" data-sv="portfolio_management">Portfolio Mgmt</span>
-      <span class="chip" data-sv="digital_marketing">Digital Marketing</span>
-    </div>
-  </aside>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <span class="logo-icon">🎯</span>
+    <span class="logo-text">JobScout</span>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="#" class="nav-item active" data-view="dashboard">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+      Dashboard
+    </a>
+    <a href="#" class="nav-item" data-view="resume">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      Resume Match
+    </a>
+    <a href="#" class="nav-item" data-view="saved">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+      Saved Jobs <span class="badge" id="savedBadge">0</span>
+    </a>
+  </nav>
+  <div class="sidebar-section-label">Sources</div>
+  <div class="source-toggles" id="sourceToggles">
+    <label class="source-toggle"><input type="checkbox" value="linkedin" checked> <span class="dot linkedin"></span> LinkedIn</label>
+    <label class="source-toggle"><input type="checkbox" value="naukri" checked> <span class="dot naukri"></span> Naukri</label>
+    <label class="source-toggle"><input type="checkbox" value="indeed" checked> <span class="dot indeed"></span> Indeed</label>
+    <label class="source-toggle"><input type="checkbox" value="iimjobs" checked> <span class="dot iimjobs"></span> IIM Jobs</label>
+  </div>
+  <div class="sidebar-section-label">Sub-Verticals</div>
+  <div class="chip-list" id="subverticalChips">
+    <span class="chip active" data-sv="all">All</span>
+    <span class="chip" data-sv="program_management">Program Mgmt</span>
+    <span class="chip" data-sv="account_management">Account Mgmt</span>
+    <span class="chip" data-sv="brand_management">Brand Mgmt</span>
+    <span class="chip" data-sv="marketing_strategy">Marketing Strategy</span>
+    <span class="chip" data-sv="market_research">Market Research</span>
+    <span class="chip" data-sv="growth_management">Growth</span>
+    <span class="chip" data-sv="category_management">Category Mgmt</span>
+    <span class="chip" data-sv="portfolio_management">Portfolio Mgmt</span>
+    <span class="chip" data-sv="digital_marketing">Digital Marketing</span>
+  </div>
+</aside>
 
-  <div class="main-wrap">
-    <header class="topbar">
-      <button class="menu-btn" id="menuBtn" onclick="toggleSidebar()">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+<div class="main-wrap">
+  <header class="topbar">
+    <button class="menu-btn" id="menuBtn" onclick="toggleSidebar()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <div class="topbar-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="globalSearch" placeholder="Search jobs, companies, skills..." oninput="applyAllFilters()">
+    </div>
+    <div class="topbar-right">
+      <div class="city-dropdown-wrap">
+        <button class="city-btn" id="cityBtn" onclick="toggleCityMenu()">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span id="cityLabel">Bengaluru</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="city-menu" id="cityMenu">
+          <div class="city-search-wrap">
+            <input type="text" id="citySearch" placeholder="Search city..." oninput="filterCities(this.value)">
+          </div>
+          <div class="city-list" id="cityList"></div>
+        </div>
+      </div>
+      <button class="theme-btn" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+        <span class="theme-icon-light">&#9728;&#65039;</span>
+        <span class="theme-icon-dark">&#127769;</span>
       </button>
-      <div class="topbar-search">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="globalSearch" placeholder="Search jobs, companies, skills…" oninput="applyAllFilters()" />
-      </div>
-      <div class="topbar-right">
-        <div class="city-dropdown-wrap">
-          <button class="city-btn" id="cityBtn" onclick="toggleCityMenu()">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span id="cityLabel">Bengaluru</span>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </button>
-          <div class="city-menu" id="cityMenu">
-            <div class="city-search-wrap">
-              <input type="text" id="citySearch" placeholder="Search city…" oninput="filterCities(this.value)" />
-            </div>
-            <div class="city-list" id="cityList"></div>
-          </div>
-        </div>
-        <button class="theme-btn" id="themeToggle" onclick="toggleTheme()" title="Toggle dark/light mode">
-          <span class="theme-icon-light">☀️</span>
-          <span class="theme-icon-dark">🌙</span>
-        </button>
-        <button class="refresh-btn" onclick="refreshJobs()">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-          <span class="refresh-label">Refresh</span>
-        </button>
-      </div>
-    </header>
-
-    <div id="view-dashboard" class="view active">
-      <div class="stats-grid">
-        <div class="stat-card"><div class="stat-val" id="s-total">–</div><div class="stat-lbl">Total openings</div></div>
-        <div class="stat-card"><div class="stat-val" id="s-today">–</div><div class="stat-lbl">Posted today</div></div>
-        <div class="stat-card"><div class="stat-val" id="s-companies">–</div><div class="stat-lbl">Companies hiring</div></div>
-        <div class="stat-card"><div class="stat-val" id="s-remote">–</div><div class="stat-lbl">Remote / hybrid</div></div>
-      </div>
-      <div class="filter-bar">
-        <select id="typeFilter" onchange="applyAllFilters()">
-          <option value="">All types</option>
-          <option value="Full-time">Full-time</option>
-          <option value="Contract">Contract</option>
-          <option value="Remote">Remote</option>
-        </select>
-        <select id="levelFilter" onchange="applyAllFilters()">
-          <option value="">All levels</option>
-          <option value="Associate">Associate</option>
-          <option value="Mid-Senior level">Mid-Senior</option>
-          <option value="Director">Director</option>
-          <option value="Executive">Executive</option>
-        </select>
-        <select id="sortFilter" onchange="applyAllFilters()">
-          <option value="recent">Most recent</option>
-          <option value="match">Best match</option>
-          <option value="applicants">Fewest applicants</option>
-        </select>
-        <div class="results-label" id="resultsLabel"></div>
-      </div>
-      <div class="match-banner" id="matchBanner" style="display:none">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        <span id="matchBannerText">Resume matched</span>
-        <button onclick="clearResume()" class="banner-clear">✕ Clear</button>
-      </div>
-      <div id="jobsList"></div>
+      <button class="refresh-btn" onclick="refreshJobs()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        <span class="refresh-label">Refresh</span>
+      </button>
     </div>
+  </header>
 
-    <div id="view-resume" class="view">
-      <div class="resume-section">
-        <div class="resume-hero">
-          <div class="resume-icon">📄</div>
-          <h2>Resume Match Engine</h2>
-          <p>Upload your resume — we'll extract your skills and score every job 0–100% for fit, then re-rank the dashboard to show your best matches first.</p>
-        </div>
-        <div class="supported-formats">
-          <span class="format-badge">PDF</span>
-          <span class="format-badge">TXT</span>
-          <span class="format-badge">DOC</span>
-          <span class="format-badge">DOCX</span>
-          <span class="format-tip">Max 5 MB · PDF gives best results</span>
-        </div>
-        <div class="upload-area" id="uploadArea">
-          <input type="file" id="resumeInput" accept=".pdf,.doc,.docx,.txt,application/pdf,text/plain" style="display:none" />
-          <div class="upload-inner" id="uploadInner">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-            <p>Click to upload or drag &amp; drop your resume</p>
-            <span>PDF, DOC, DOCX, or TXT</span>
-          </div>
-        </div>
-        <div class="resume-processing" id="resumeProcessing" style="display:none">
-          <div class="proc-spinner"></div>
-          <span id="procMsg">Reading your resume…</span>
-        </div>
-        <div class="resume-error" id="resumeError" style="display:none">
-          <span>⚠️</span> <span id="resumeErrorMsg"></span>
-          <button onclick="resetUpload()">Try again</button>
-        </div>
-        <div class="resume-status" id="resumeStatus" style="display:none">
-          <div class="status-card">
-            <div class="status-icon success">✓</div>
-            <div class="status-info">
-              <strong id="resumeFileName">resume.pdf</strong>
-              <span id="resumeSkillCount">–</span>
-            </div>
-            <button onclick="clearResume()" class="btn-ghost">Remove</button>
-          </div>
-          <div class="extracted-skills" id="extractedSkills"></div>
-        </div>
-        <div class="resume-results" id="resumeResults" style="display:none">
-          <h3>Top Matching Jobs</h3>
-          <div id="resumeJobsList"></div>
-          <button class="btn-primary" onclick="switchView('dashboard')">View all jobs with match scores →</button>
-        </div>
-      </div>
+  <div id="view-dashboard" class="view active">
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-val" id="s-total">0</div><div class="stat-lbl">Total openings</div></div>
+      <div class="stat-card"><div class="stat-val" id="s-today">0</div><div class="stat-lbl">Posted today</div></div>
+      <div class="stat-card"><div class="stat-val" id="s-companies">0</div><div class="stat-lbl">Companies hiring</div></div>
+      <div class="stat-card"><div class="stat-val" id="s-remote">0</div><div class="stat-lbl">Remote / hybrid</div></div>
     </div>
+    <div class="filter-bar">
+      <select id="typeFilter" onchange="applyAllFilters()">
+        <option value="">All types</option>
+        <option value="Full-time">Full-time</option>
+        <option value="Contract">Contract</option>
+        <option value="Remote">Remote</option>
+      </select>
+      <select id="levelFilter" onchange="applyAllFilters()">
+        <option value="">All levels</option>
+        <option value="Associate">Associate</option>
+        <option value="Mid-Senior level">Mid-Senior</option>
+        <option value="Director">Director</option>
+        <option value="Executive">Executive</option>
+      </select>
+      <select id="sortFilter" onchange="applyAllFilters()">
+        <option value="recent">Most recent</option>
+        <option value="match">Best match</option>
+        <option value="applicants">Fewest applicants</option>
+      </select>
+      <div class="results-label" id="resultsLabel"></div>
+    </div>
+    <div class="match-banner" id="matchBanner" style="display:none">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <span id="matchBannerText">Resume matched</span>
+      <button onclick="clearResume()" class="banner-clear">X Clear</button>
+    </div>
+    <div id="jobsList"></div>
+  </div>
 
-    <div id="view-saved" class="view">
-      <div class="saved-header">
-        <h2>Saved Jobs</h2>
-        <button class="btn-ghost" onclick="exportSaved()">Export CSV</button>
+  <div id="view-resume" class="view">
+    <div class="resume-section">
+      <div class="resume-hero">
+        <div class="resume-icon">&#128196;</div>
+        <h2>Resume Match Engine</h2>
+        <p>Upload your resume and we will extract your skills and score every job 0-100% for fit, then re-rank the dashboard to show your best matches first.</p>
       </div>
-      <div id="savedJobsList"><div class="empty-state"><div class="empty-state-icon">🔖</div><p>No saved jobs yet. Click "Save" on any job card.</p></div></div>
+      <div class="supported-formats">
+        <span class="format-badge">PDF</span>
+        <span class="format-badge">TXT</span>
+        <span class="format-badge">DOC</span>
+        <span class="format-badge">DOCX</span>
+        <span class="format-tip">Max 5 MB</span>
+      </div>
+      <div class="upload-area" id="uploadArea">
+        <input type="file" id="resumeInput" accept=".pdf,.doc,.docx,.txt" style="display:none">
+        <div class="upload-inner" id="uploadInner">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <p>Click to upload or drag and drop your resume</p>
+          <span>PDF, DOC, DOCX, or TXT</span>
+        </div>
+      </div>
+      <div class="resume-processing" id="resumeProcessing" style="display:none">
+        <div class="proc-spinner"></div>
+        <span id="procMsg">Reading your resume...</span>
+      </div>
+      <div class="resume-error" id="resumeError" style="display:none">
+        <span>Warning: </span><span id="resumeErrorMsg"></span>
+        <button onclick="resetUpload()">Try again</button>
+      </div>
+      <div class="resume-status" id="resumeStatus" style="display:none">
+        <div class="status-card">
+          <div class="status-icon success">&#10003;</div>
+          <div class="status-info">
+            <strong id="resumeFileName">resume.pdf</strong>
+            <span id="resumeSkillCount">analyzing...</span>
+          </div>
+          <button onclick="clearResume()" class="btn-ghost">Remove</button>
+        </div>
+        <div class="extracted-skills" id="extractedSkills"></div>
+      </div>
+      <div class="resume-results" id="resumeResults" style="display:none">
+        <h3>Top Matching Jobs</h3>
+        <div id="resumeJobsList"></div>
+        <button class="btn-primary" onclick="switchView('dashboard')">View all jobs with match scores</button>
+      </div>
     </div>
   </div>
 
-  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
-    <div class="modal" id="jobModal">
-      <button class="modal-close" onclick="closeJobModal()">✕</button>
-      <div id="modalContent"></div>
+  <div id="view-saved" class="view">
+    <div class="saved-header">
+      <h2>Saved Jobs</h2>
+      <button class="btn-ghost" onclick="exportSaved()">Export CSV</button>
+    </div>
+    <div id="savedJobsList">
+      <div class="empty-state"><div class="empty-state-icon">&#128278;</div><p>No saved jobs yet. Click Save on any job card.</p></div>
     </div>
   </div>
+</div>
 
-  <div id="cityOverlay" onclick="closeCityMenu()" style="display:none;position:fixed;inset:0;z-index:89"></div>
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal" id="jobModal">
+    <button class="modal-close" onclick="closeJobModal()">X</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
 
-  <script>
+<div id="cityOverlay" onclick="closeCityMenu()" style="display:none;position:fixed;inset:0;z-index:89"></div>
+
+<script>
 /* data/jobs.js — Combined job data: LinkedIn + Naukri + Indeed + IIM Jobs */
 
 const JOBS_DATA = [
@@ -542,8 +544,9 @@ const SOURCE_META = {
   indeed:   { name:"Indeed",   tagClass:"tag-src-indeed"   },
   iimjobs:  { name:"IIM Jobs", tagClass:"tag-src-iimjobs"  }
 };
-  </script>
-  <script>
+
+</script>
+<script>
 /* js/resume.js — Resume engine with PDF.js support */
 
 const ResumeEngine = (() => {
@@ -684,8 +687,9 @@ const ResumeEngine = (() => {
 
   return { processResume, matchJobs, getResumeData, clearResume, getSkills, scoreJob };
 })();
-  </script>
-  <script>
+
+</script>
+<script>
 /* js/app.js — JobScout v2: dark/light mode + city dropdown + fixed resume */
 
 /* ============================================================  CITIES  */
@@ -1150,6 +1154,7 @@ function esc(s) {
   if(s===null||s===undefined) return "";
   return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 }
-  </script>
+
+</script>
 </body>
 </html>
